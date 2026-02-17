@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+:root {
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: "Caprasimo", serif;
+    --font03: "Handlee", cursive;
+
+    --color01: rgb(255, 247, 213);
+    --color02: rgb(216, 206, 183);
+    --color03: rgb(226, 221, 153);
+    --color04:  rgb(0, 0, 0);
+    --color05:  rgb(54, 16, 0);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    font-family: var(--font01);
+    min-height: 100vh;
+    background-color: var(--color03);
+    font-size: 5vw;
+}
+
+header {
+    background-color: rgb(54, 16, 0);
+    color: rgb(255, 247, 213);
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font02);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 8vw;
+    text-shadow: 5px 10px 5px black;
+}
+
+header > p {
+        padding-bottom: 50px;
+        font-size: 50%;
+    }
+    
+    header a, footer a {
+        color: var(--color02);
+        text-decoration: none;
+        font-weight: bolder;
+}
+
+section {
+    font-family: var(--font03);
+    font-size: 3vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section p {
+    margin: 10%;
+    padding: 10px;
+    text-shadow: 1px 1px 1px;
+}
+
+section.normal {
+    background-color: var(--color03);
+    color: black;
+    padding: 10px;
+}
+
+section.img {
+    background-color: var(--color04);
+    color: rgb(255, 255, 255);
+    text-overflow: 2px 2px 2px black;
+    padding: 10px;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+
+section.img p {
+    display: inline-block;
+    background-color: rgba(22, 2, 2, 0.512);
+    margin: 10%;
+    padding: 30px;
+    text-shadow:  5px 5px 5px black;
+}
+
+section#img01 {
+    background-image: url('imagens/4955848_2b4f4fa96d4b6cc.jpeg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('imagens/escrever-e-enviar-cartas-ou-cartoes-postais-escritos-a-mao-uns-aos-outros_1314467-168468.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--color05);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5vw;
+}
